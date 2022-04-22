@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int n,arr[100],i,sum=0,odd=0,e;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if(i%2==0)
+        {
+            sum=sum+arr[i];
+        }
+        else
+        {
+            odd=odd+arr[i];
+        }
+    }
+    if(sum>odd)
+    {
+        e=sum-odd;
+    }
+    else
+    {
+        e=odd-sum;
+    }
+    printf("%d",e);
+}
