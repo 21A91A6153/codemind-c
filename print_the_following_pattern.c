@@ -1,20 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int n,arr[100][100],i,j;
+    int n,arr[100],i,j;
     scanf("%d",&n);
-    for(i=0;i<n;i++)
+    for(i=1;i<=n;i++)
     {
-        for(j=0;j<n;j++)
+        for(j=1;j<=n;j++)
         {
-            if(i==j)
-            {
-                printf("0");
-            }
-            else
-            {
-                printf("x");
-            }
+            printf("%c ",'A'-1+i);
         }
         printf("
 ");
